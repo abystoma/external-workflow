@@ -6,9 +6,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          fetch-depth: 3  
+          fetch-depth: 5  
       - name: Checkout
-        run: git checkout 6290a6f
+        run: git checkout HEAD^
       - name: Greetings
         run: echo "$(<Greetings.txt)"
 
