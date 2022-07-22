@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          fetch-depth: 6  
+          fetch-depth: 0
       - name: Checkout
         run: git checkout HEAD^
       - name: Greetings
