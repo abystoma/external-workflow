@@ -8,7 +8,7 @@ jobs:
         with:
           fetch-depth: 2
       - name: Checkout
-        run: git fetch origin 98e446f
+        run: git fetch main 98e446f
         run: git checkout HEAD^
       - name: Greetings
         run: echo "$(<Greetings.txt)"
