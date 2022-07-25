@@ -1,0 +1,11 @@
+name: greetings
+on: [push]
+jobs:
+  external-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: ac67a68fb03857c5a95228d1bb0c414a76b2c78d
+      - name: Greetings
+        run: echo "$(<greetings.txt)"
